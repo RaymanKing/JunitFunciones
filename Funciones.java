@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 
 public class Funciones {
-    public static void main(String[] args) {
-
-    }
 
     public static ArrayList<Double> funcion6(ArrayList<Double> arrayDoubles) {
         for (int i = 0; i < arrayDoubles.size(); i++) {
