@@ -1,9 +1,7 @@
-import java.util.Scanner;
 
 public class Funciones{
 
- //En esta función comprobaremos si un número es divisible entre 13.
- 
+
   public static boolean funcion1(int numero){
 
   
@@ -22,3 +20,22 @@ public class Funciones{
   }
 
 }
+
+
+    public static boolean funcion2 (int numero){
+
+
+    if(numero>=400 && numero <=500){
+   
+        return true;
+
+    }else{
+        return false;
+    
+         
+        }
+
+     }
+}
+
+
