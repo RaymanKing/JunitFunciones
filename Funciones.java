@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Funciones{
 
  //En esta función comprobaremos si un número es divisible entre 13.
