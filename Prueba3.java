@@ -42,20 +42,20 @@ public class Prueba3 {
     @DisplayName("Test de Caja Negra con un valor")
     @Test
     void testFuncion3() {
-        assertEquals(0, funcion.funcion1(26, 36));
+        assertEquals(0, funcion.funcion3(26, 36));
     }
     
-    @DisplayName("Prueba realizada por espe")
+    @DisplayName("Test de Caja Negra")
     @Test
     //test de caja negra correcta.
     void testFuncion3_2() {
     	assertEquals(0, funcion.funcion3(10, 450));
-    //compruebo que es correcta, si no se cumple lo establecido en la función devuelve un 0.
+    //compruebo que es correcta, si no se cumple lo establecido en la funciÃ³n devuelve un 0.
     }
 
     @DisplayName("Test de Caja Negra sin valor")
     @Test
     void testFuncion3_3() {
-        assertEquals(0, funcion.funcion1());
+        assertEquals(0, funcion.funcion3());
     }
 }
