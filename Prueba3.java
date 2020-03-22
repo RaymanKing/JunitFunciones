@@ -43,5 +43,13 @@ public class Prueba3 {
         assertEquals(false, funcion.funcion3(26, 36));
 
     }
+    
+    @DisplayName("Prueba realizada por espe")
+    @Test
+    //test de caja negra correcta.
+    void testFuncion3_2() {
+    	assertEquals(0, funcion.funcion3(10, 450));
+    //compruebo que es correcta, si no se cumple lo establecido en la función devuelve un 0.
+    }
 
 }
