@@ -58,7 +58,7 @@ public class Funciones {
                     }else{
                         cadena = cadena + "";
                 }
-            }cadena = cadena + " ";
+            }cadena = cadena + " "; 
             for (int i = 0; i < cadena2.length(); i++) {
                 if (cadena2.charAt(i) != 'a'
                     && cadena2.charAt(i) != 'e'
