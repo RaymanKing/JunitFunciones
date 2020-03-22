@@ -44,4 +44,9 @@ public class Prueba5 {
                 "Enrique Rapela Castejon 12/02/1197, Marcos Torres Segura 28/08/1999, Oscar Padilla Valdes 09/04/2000, Esperanza Del Junco Perez 29/06/1997"));
     }
 
+    @DisplayName("Test de caja Negra con Valor Nulo")
+    @Test
+    void testFuncion5_1() {
+        assertNull(funcion.funcion5(null));
+    }
 }
