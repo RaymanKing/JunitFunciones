@@ -2,6 +2,8 @@ package pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -37,10 +39,15 @@ public class Prueba1 {
         funcion = null;
     }
 
-    @DisplayName("Test de Caja Negra con un valor")
+    @DisplayName("Test de Caja Negra con un valor divisible")
     @Test
     void funcion1() {
         assertEquals(true, funcion.funcion1(26));
     }
 
+    @DisplayName("Test de Caja Negra con un valor que no sea divisible")
+    @Test
+    void funcion1_1() {
+        assertEquals(false, funcion.funcion1(32));
+    }
 }
