@@ -1,3 +1,5 @@
+package pruebas;
+
 import java.util.ArrayList;
 
 public class Funciones {
