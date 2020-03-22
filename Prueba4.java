@@ -42,7 +42,7 @@ public class Prueba4 {
     @DisplayName("Test de Caja Negra con cadenas")
     @Test
     void testFuncion4() {
-        assertArrayEquals(["nrqpl","scdll","rcsrrs"], funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
+        assertArrayEquals("nrqpl","scdll","rcsrrs", funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
     }
 
     @DisplayName("Test de Caja Negra Valor Nulo")
