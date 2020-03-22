@@ -40,8 +40,8 @@ public class Prueba7 {
     @DisplayName("Test de Caja Negra con array")
     @Test
     void testFuncion7() {
-        assertArrayEquals("ocle", "isti", "onof", "ill",
-                funcion.funcion7("Esternocleidomastoideo", "Futbolistico", "Soyunmonofeliz", "Pentakill"));
+        assertArrayEquals({"ocle", "isti", "onof", "ill"},
+                funcion.funcion7({"Esternocleidomastoideo", "Futbolistico", "Soyunmonofeliz", "Pentakill"}));
     }
     // 6 y 10
 }
