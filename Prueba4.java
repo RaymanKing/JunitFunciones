@@ -51,4 +51,9 @@ public class Prueba4 {
         assertNull(funcion.funcion4(null));
     }
 
+    @DisplayName("Test de analisis de limites de valores")
+    @Test
+    void testFuncion4_2() {
+        assertNull(null, funcion.funcion4("E", "O", "M"));
+    }
 }
