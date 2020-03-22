@@ -40,7 +40,7 @@ public class Prueba5 {
     @DisplayName("Test de Caja Negra con cadena")
     @Test
     void testFuncion5() {
-        assertEquals(127, funcion.funcion1(
+        assertEquals(127, funcion.funcion5(
                 "Enrique Rapela Castejon 12/02/1197, Marcos Torres Segura 28/08/1999, Oscar Padilla Valdes 09/04/2000, Esperanza Del Junco Perez 29/06/1997"));
     }
 
