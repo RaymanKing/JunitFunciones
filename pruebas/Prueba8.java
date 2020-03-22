@@ -67,7 +67,7 @@ public class Prueba8 {
 
 		assertEquals(true, funcion.funcion8 (tiempos, alumnos));
 
-		//es una prueba correcta, por que el resultado esperado coincide con la de la función.
+		//es una prueba correcta, por que el resultado esperado coincide con la de la funciï¿½n.
 	}
 
     @DisplayName ("Test de analisis de limites")
