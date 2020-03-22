@@ -40,35 +40,51 @@ public class Funciones {
         }
     }
 
-    public String funcion4(String cadena1, String cadena2, String cadena3) {
-        String cadena;
+    public String funcion4(String cadena1, String cadena2, String cadena3){
 
-        for (int y = 0; y < cadena1.length(); y++) {
-            if (cadena1.charAt(y) != 'a' && cadena1.charAt(y) != 'e' && cadena1.charAt(y) != 'i'
-                    && cadena1.charAt(y) != 'o' && cadena1.charAt(y) != 'u' && cadena1.charAt(y) >= 97
-                    && cadena1.charAt(y) <= 122) {
-                System.out.print(cadena1.charAt(y));
-            }
-            System.out.print(" ");
-        }
+            String cadena = "";
 
-        for (int y = 0; y < cadena2.length(); y++) {
-            if (cadena2.charAt(y) != 'a' && cadena2.charAt(y) != 'e' && cadena2.charAt(y) != 'i'
-                    && cadena2.charAt(y) != 'o' && cadena2.charAt(y) != 'u' && cadena2.charAt(y) >= 97
-                    && cadena2.charAt(y) <= 122) {
-                System.out.print(cadena2.charAt(y));
+            for (int i = 0; i < cadena1.length(); i++) {
+                if (cadena1.charAt(i) != 'a'
+                    && cadena1.charAt(i) != 'e'
+                    && cadena1.charAt(i) != 'i'
+                    && cadena1.charAt(i) != 'o'
+                    && cadena1.charAt(i) != 'u' 
+                    && cadena1.charAt(i) >= 97 
+                    && cadena1.charAt(i) <= 122){
+                    cadena = cadena + cadena1.charAt(i);
+                    }else{
+                        cadena = cadena + "";
+                }
+            }cadena = cadena + " ";
+            for (int i = 0; i < cadena2.length(); i++) {
+                if (cadena2.charAt(i) != 'a'
+                    && cadena2.charAt(i) != 'e'
+                    && cadena2.charAt(i) != 'i'
+                    && cadena2.charAt(i) != 'o'
+                    && cadena2.charAt(i) != 'u' 
+                    && cadena2.charAt(i) >= 97 
+                    && cadena2.charAt(i) <= 122){
+                    cadena = cadena + cadena2.charAt(i);
+                    }else{
+                        cadena = cadena + "";
+                }
+            }cadena = cadena + " ";
+            for (int i = 0; i < cadena3.length(); i++) {
+                if (cadena3.charAt(i) != 'a'
+                    && cadena3.charAt(i) != 'e'
+                    && cadena3.charAt(i) != 'i'
+                    && cadena3.charAt(i) != 'o'
+                    && cadena3.charAt(i) != 'u' 
+                    && cadena3.charAt(i) >= 97 
+                    && cadena3.charAt(i) <= 122){
+                    cadena = cadena + cadena3.charAt(i);
+                }else{
+                    cadena = cadena + "";
             }
-            System.out.print(" ");
-        }
-
-        for (int y = 0; y < cadena3.length(); y++) {
-            if (cadena3.charAt(y) != 'a' && cadena3.charAt(y) != 'e' && cadena3.charAt(y) != 'i'
-                    && cadena3.charAt(y) != 'o' && cadena3.charAt(y) != 'u' && cadena3.charAt(y) >= 97
-                    && cadena3.charAt(y) <= 122) {
-                System.out.print(cadena3.charAt(y));
-            }
-            System.out.print(" ");
-        }
+        }cadena = cadena + " "; 
+        return cadena;  
+        
     }
 
     public static int funcion5(String cadena1, int number) {
@@ -120,18 +136,18 @@ public class Funciones {
         return arrayDoubles;
     }
 
-    public void funcion7() {
+    public String[] funcion7(String[] listaCadenas){
 
-        String[] cadena = { "Enrique", "Esperanza", "Oscar", "Marcos" };
+        String cadena= "";
+        String[] cadenaS = {cadena};
 
-        for (int i = 0; i < cadena.length; i++) {
-            for (int y = 0; y < cadena[i].length(); y++) {
+        for (int i = 0; i < listaCadenas.length; i++) {
+            for (int y = 0; y < listaCadenas[i].length(); y++) {
                 if (y >= 6 && y <= 10) {
-                    System.out.print(cadena[i].charAt(y));
+                cadena = cadena + listaCadenas[i].charAt(y);
                 }
-            }
-            System.out.print(" ");
-        }
+            }cadena = cadena + " ";
+        }return cadenaS;
     }
 
     public static boolean funcion8(int[][] tiempodetrabajos, ArrayList<String> alumnos) {
