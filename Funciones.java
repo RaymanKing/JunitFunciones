@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Funciones {
 
     public static int funcion5(String cadena1) {
