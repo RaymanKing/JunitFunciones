@@ -41,6 +41,7 @@ public class Prueba3 {
     @Test
     void testFuncion3() {
         assertEquals(false, funcion.funcion3(26, 36));
+
     }
 
 }
