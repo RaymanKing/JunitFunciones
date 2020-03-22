@@ -56,4 +56,17 @@ public class Prueba4 {
     void testFuncion4_2() {
         assertNull(null, funcion.funcion4("E", "O", "M"));
     }
+    
+    @DisplayName("Test de caja negra aleatoria incorrecta:")
+    @Test
+
+    void pruebaFuncion4_3(){
+
+        String [] nombres = {"cpr", "osc", "rTy"};
+
+        assertEquals(nombres[(int) Math.floor(Math.random()*nombres.length)] ,funcion.funcion4 ("carlos", "espe", "asuncion"));
+
+        //le pasamos un aleatorio de palabras que no coinciden con el resultado esperado.
+    }
+
 }
