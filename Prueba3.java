@@ -2,6 +2,8 @@ package pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -40,8 +42,12 @@ public class Prueba3 {
     @DisplayName("Test de Caja Negra con un valor")
     @Test
     void testFuncion3() {
-        assertEquals(false, funcion.funcion3(26, 36));
-
+        assertEquals(0, funcion.funcion1(26, 36));
     }
 
+    @DisplayName("Test de Caja Negra sin valor")
+    @Test
+    void testFuncion3_3() {
+        assertEquals(0, funcion.funcion1());
+    }
 }
