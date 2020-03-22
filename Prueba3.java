@@ -58,4 +58,11 @@ public class Prueba3 {
     void testFuncion3_3() {
         assertEquals(0, funcion.funcion3());
     }
+
+    @DisplayName("Test de analisis de valores limites")
+    @Test
+    void testFuncion3_4() {
+        assertEquals(0, funcion.funcion3(2147483647,2147483647));
+        assertEquals(0, funcion.funcion3(0,0));
+    }
 }
