@@ -41,6 +41,11 @@ public class Prueba6 {
     @Test
     void testFuncion6() {
         assertArrayEquals(6, 72, 12, 1, funcion.funcion6(1, 2, 2, 1));
+    }// z = 6 y 6
+
+    @DisplayName
+    @Test
+    void testFuncion6_1() {
+        assertNull(0, 0, 0, 0, funcion.funcion6(null));
     }
-    // z = 6 y 6
 }
