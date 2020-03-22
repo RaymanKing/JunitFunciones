@@ -39,7 +39,7 @@ public class Prueba1 {
         funcion = null;
     }
 
-    @DisplayName("Test de Caja Negra con un valor divisible")
+   @DisplayName("Test de Caja Negra con un valor divisible")
     @Test
     void testFuncion1() {
         assertEquals(true, funcion.funcion1(26));
@@ -50,4 +50,23 @@ public class Prueba1 {
     void testFuncion1_2() {
         assertEquals(false, funcion.funcion1(32));
     }
+    
+    @DisplayName("Test de Caja Negra con valores aleatorios")
+    
+    @Test
+    
+    //Test de caja negra aleatoria.
+    void testFuncion1_3() {
+    	assertEquals(true, funcion.funcion1((int)(Math.random() * 10)));
+    	//le pasamos un número aleatorio del 0 al 10, el int lo convierte en entero.
+    }
+
+    @DisplayName("Test de Analisis limite")
+    @Test
+    void testFuncion1_4() {
+        assertEquals(false, funcion.funcion1(2147483647));
+        assertEquals(false, funcion.funcion1(0));
+        assertEquals(false, funcion.funcion1(-1));
+    }
+
 }
