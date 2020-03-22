@@ -2,6 +2,8 @@ package pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,7 +19,7 @@ public class Prueba8 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -40,14 +42,22 @@ public class Prueba8 {
     @DisplayName("Test de Caja Negra con array")
     @Test
     void testFuncion8() {
-        assertEquals(true,
-                funcion.funcion8({{50,150,100},{250,250,100},{60,110,80},{150,50,200}}, ("Marcos","Oscar","Enrique","Esperanza"));
+    	int[][] tiempos = {{50,150,300},{250,250,100},{60,110,80},{150,50,200}};
+    	ArrayList<String> alumnos = new ArrayList<String>();
+    	alumnos.add("Marcos");
+    	alumnos.add("Oscar");
+    	alumnos.add("Enrique");
+    	alumnos.add("Esperanza");
+        assertNotEquals(true,
+                funcion.funcion8(tiempos,alumnos));
     }// 700
 
-    @DisplayName("Test de Caja Negra con array")
+    @DisplayName("Test de Caja Negra falso")
     @Test
     void testFuncion8_1() {
-        assertNull(false, funcion.funcion8())
+    	int[][] tiempos = {{}};
+    	ArrayList<String> alumnos = new ArrayList<String>();
+        assertNotEquals(false, funcion.funcion8(tiempos,alumnos));
     }
     
     @DisplayName ("Prueba de caja negra correcta: ")
@@ -69,10 +79,5 @@ public class Prueba8 {
 
 		//es una prueba correcta, por que el resultado esperado coincide con la de la funci�n.
 	}
-
-    @DisplayName ("Test de analisis de limites")
-    @Test 
-    void pruebaFuncion8_3() {
-    }
 
 }

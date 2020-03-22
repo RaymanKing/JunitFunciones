@@ -17,7 +17,7 @@ public class Prueba2 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -40,13 +40,13 @@ public class Prueba2 {
     @DisplayName("Test de Caja Negra con un valor")
     @Test
     void testFuncion2() {
-        assertEquals(true, funcion.funcion2(7));
+        assertEquals(true, funcion.funcion2(450));
     }
 
-    @DisplayName("Test de Caja Negra Valor Nulo")
+    @DisplayName("Test de Caja Negra Valor superior")
     @Test
     void testFuncion2_2() {
-        assertNull(funcion.funcion2(null));
+        assertEquals(false,funcion.funcion2(51));
     }
     
     @DisplayName("prueba realizada por espe(*MARIO*)")

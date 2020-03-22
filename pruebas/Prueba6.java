@@ -2,6 +2,8 @@ package pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,7 +19,7 @@ public class Prueba6 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -40,20 +42,37 @@ public class Prueba6 {
     @DisplayName("Test de Caja Negra con cadena")
     @Test
     void testFuncion6() {
-        assertArrayEquals({6, 72, 12, 1}, funcion.funcion6({1, 2, 2, 1}));
+    	ArrayList<Double> arrayDouble = new ArrayList<Double>();
+    	arrayDouble.add(1.0);
+    	arrayDouble.add(2.0);
+    	arrayDouble.add(2.0);
+    	arrayDouble.add(1.0);
+    	ArrayList<Double> array = new ArrayList<Double>();
+    	array.add(6.0);
+    	array.add(64.0);
+    	array.add(12.0);
+    	array.add(1.0);
+        assertEquals(array, funcion.funcion6(arrayDouble));
     }
     // z = 6 y 6
 
-    @DisplayName
+    @DisplayName("Test de valores nulos")
     @Test
     void testFuncion6_1() {
-        assertNull(0, 0, 0, 0, funcion.funcion6(null));
+    	ArrayList<Double> array = new ArrayList<Double>();
+    	array.add(0.0);
+        assertEquals(array, funcion.funcion6(array));
     }
 
     @DisplayName("Test de analisis de limites")
     @Test
     void testFuncion6_2() {
-        assertNull(0, 0, 0, 0, funcion.funcion6(null));
+    	ArrayList<Double> arrayLimite = new ArrayList<Double>();
+    	arrayLimite.add(0.0);
+    	arrayLimite.add(0.0);
+    	arrayLimite.add(0.0);
+    	arrayLimite.add(0.0);
+        assertEquals(arrayLimite, funcion.funcion6(arrayLimite));
     } 
     
     @DisplayName ("Prueba de caja negra incorrecta")
@@ -63,17 +82,17 @@ public class Prueba6 {
      void pruebaFuncion6(){
 
         ArrayList <Double> numeros = new ArrayList <Double> ();
-        numeros.add(8);
-        numeros.add(6);
+        numeros.add(8.0);
+        numeros.add(6.0);
         ArrayList <Double> resultado = new ArrayList <Double> ();
-        resultado.add(8);
-        resultado.add(6);
+        resultado.add(8.0);
+        resultado.add(6.0);
 
         //le pasamos un resultado en el que los n�meros no se modifican.
        
         //comprueba que el resultado es err�neo, dado que le damos unos valores que da un resultado distino al que dar�a en la funci�n.
 
-        assertEquals(resultado ,funcion.funcion6 (numeros));
+        assertNotEquals(resultado ,funcion.funcion6 (numeros));
 
      }
 

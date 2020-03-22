@@ -19,7 +19,7 @@ public class Prueba1 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -48,7 +48,7 @@ public class Prueba1 {
     @DisplayName("Test de Caja Negra con un valor que no sea divisible")
     @Test
     void testFuncion1_2() {
-        assertEquals(false, funcion.funcion1(32));
+        assertNotEquals(true, funcion.funcion1(32));
     }
     
     @DisplayName("Test de Caja Negra con valores aleatorios")
@@ -57,7 +57,7 @@ public class Prueba1 {
     
     //Test de caja negra aleatoria.
     void testFuncion1_3() {
-    	assertEquals(true, funcion.funcion1((int)(Math.random() * 10)));
+    	assertNotEquals(true, funcion.funcion1((int)(Math.random() * 10)));
     	//le pasamos un número aleatorio del 0 al 10, el int lo convierte en entero.
     }
 
@@ -65,7 +65,7 @@ public class Prueba1 {
     @Test
     void testFuncion1_4() {
         assertEquals(false, funcion.funcion1(2147483647));
-        assertEquals(false, funcion.funcion1(0));
+        assertNotEquals(false, funcion.funcion1(0));
         assertEquals(false, funcion.funcion1(-1));
     }
 

@@ -17,7 +17,7 @@ public class Prueba7 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        Funciones funcion = new Funciones();
     }
 
     @BeforeEach
@@ -40,26 +40,32 @@ public class Prueba7 {
     @DisplayName("Test de Caja Negra con array")
     @Test
     void testFuncion7() {
-        assertArrayEquals({"ocle", "isti", "onof", "ill"},
-                funcion.funcion7({"Esternocleidomastoideo", "Futbolistico", "Soyunmonofeliz", "Pentakill"}));
+    	String[] palabras = {"ocle","isti","onof","ill"};
+    	String[] clave = {"Esternocleidomastoideo", "Futbolistico", "Soyunmonofeliz", "Pentakill"};
+        assertArrayEquals(palabras,
+                funcion.funcion7(clave));
     }
 
     // 6 y 10
     @DisplayName("Test de Caja Negra con valor Nulo")
     @Test
     void testFuncion7_1() {
-        assertNull(" ", funcion.funcion7(null));
+    	String[] nulo = {""};    	
+        assertArrayEquals(nulo, funcion.funcion7(nulo));
     }
 
-    @DisplayName("Test de analisis de limites");
+    @DisplayName("Test de analisis de limites")
     @Test
     void testFuncion7_2() {
-        assertArrayEquals("","","","", funcion.funcion7("a", "b", "c","d"));
-        assertArrayEquals("78910", funcion.funcion7("12345678910"));
+    	String[] limite = {"","","",""};
+    	String[] enviado = {"a", "b", "c","d"};
+    	String[] limite2 = {"78910"};
+    	String[] enviado2 = {"12345678910"};
+        assertArrayEquals(limite, funcion.funcion7(enviado));
+        assertArrayEquals(limite2, funcion.funcion7(enviado2));
     }
     
-    @DisplayName("Prueba de caja negra incorrecta: ")
-
+    @DisplayName("Prueba de caja negra incorrecta")
     @Test
 
       void pruebaFuncion7(){

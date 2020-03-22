@@ -19,7 +19,7 @@ public class Prueba3 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -53,10 +53,10 @@ public class Prueba3 {
     //compruebo que es correcta, si no se cumple lo establecido en la función devuelve un 0.
     }
 
-    @DisplayName("Test de Caja Negra sin valor")
+    @DisplayName("Test de Caja Negra valor minimo")
     @Test
     void testFuncion3_3() {
-        assertEquals(0, funcion.funcion3());
+        assertEquals(0, funcion.funcion3(0.0,0.0));
     }
 
     @DisplayName("Test de analisis de valores limites")

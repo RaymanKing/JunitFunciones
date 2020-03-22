@@ -17,7 +17,7 @@ public class Prueba4 {
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funcion();
+        funcion = new Funciones();
     }
 
     @BeforeEach
@@ -37,10 +37,29 @@ public class Prueba4 {
         funcion = null;
     }
 
-    @DisplayName("Test de Caja Negra con cadenas")
+    @DisplayName("Test de Caja Negra con cadenas erróneas")
     @Test
     void testFuncion4() {
-        assertArrayEquals(["nrqpl","scdll","rcsrrs"], funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
+        assertNotEquals("nrqpl scrdll rcsrrs", funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
+    }
+    
+    
+    @DisplayName("Test de analisis de limites de valores")
+    @Test
+    void testFuncion4_2() {
+        assertNull(null, funcion.funcion4("E", "O", "M"));
+    }
+    
+    @DisplayName("Test de caja negra aleatoria incorrecta:")
+    @Test
+
+    void pruebaFuncion4_3(){
+
+        String [] nombres = {"cpr", "osc", "rTy"};
+
+        assertNotEquals(nombres[(int) Math.floor(Math.random()*nombres.length)] ,funcion.funcion4 ("carlos", "espe", "asuncion"));
+
+        //le pasamos un aleatorio de palabras que no coinciden con el resultado esperado.
     }
 
 }

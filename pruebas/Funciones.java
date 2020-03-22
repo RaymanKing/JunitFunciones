@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Funciones {
 
-    public static boolean funcion1(int numero) {
+    public boolean funcion1(int numero) {
 
         int x = 13;
 
@@ -20,7 +20,7 @@ public class Funciones {
 
     }
 
-    public static boolean funcion2(int numero) {
+    public boolean funcion2(int numero) {
 
         if (numero >= 400 && numero <= 500) {
 
@@ -33,7 +33,7 @@ public class Funciones {
 
     }
 
-    public static double funcion3(double numero, double divisor) {
+    public double funcion3(double numero, double divisor) {
 
         if (numero % 13 == 0 && numero % divisor == 0) {
             return numero / divisor;
@@ -89,8 +89,9 @@ public class Funciones {
         
     }
 
-    public static int funcion5(String cadena1, int number) {
-
+    public int funcion5(String cadena1) {
+    	
+    	int number = 0;
         for (int i = 0; i < cadena1.length(); i++) {
 
             if (cadena1.charAt(i) == 48) {
@@ -127,7 +128,7 @@ public class Funciones {
         return number;
     }
 
-    public static ArrayList<Double> funcion6(ArrayList<Double> arrayDoubles) {
+    public ArrayList<Double> funcion6(ArrayList<Double> arrayDoubles) {
         for (int i = 0; i < arrayDoubles.size(); i++) {
             if (i % 2 == 0) {
                 arrayDoubles.set(i, arrayDoubles.get(i) * 6);
@@ -152,7 +153,7 @@ public class Funciones {
         }return cadenaS;
     }
 
-    public static boolean funcion8(int[][] tiempodetrabajos, ArrayList<String> alumnos) {
+    public boolean funcion8(int[][] tiempodetrabajos, ArrayList<String> alumnos) {
 
         int tiempo = 700;
         int sumatotal = 0;
