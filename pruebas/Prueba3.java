@@ -44,25 +44,26 @@ public class Prueba3 {
     void testFuncion3() {
         assertEquals(0, funcion.funcion3(26, 36));
     }
-    
+
     @DisplayName("Test de Caja Negra")
     @Test
-    //test de caja negra correcta.
+    // test de caja negra correcta.
     void testFuncion3_2() {
-    	assertEquals(0, funcion.funcion3(10, 450));
-    //compruebo que es correcta, si no se cumple lo establecido en la función devuelve un 0.
+        assertEquals(0, funcion.funcion3(10, 450));
+        // compruebo que es correcta, si no se cumple lo establecido en la función
+        // devuelve un 0.
     }
 
     @DisplayName("Test de Caja Negra valor minimo")
     @Test
     void testFuncion3_3() {
-        assertEquals(0, funcion.funcion3(0.0,0.0));
+        assertEquals(0, funcion.funcion3(0.0, 0.0));
     }
 
     @DisplayName("Test de analisis de valores limites")
     @Test
     void testFuncion3_4() {
-        assertEquals(0, funcion.funcion3(2147483647,2147483647));
-        assertEquals(0, funcion.funcion3(0,0));
+        assertEquals(0, funcion.funcion3(2147483647, 2147483647));
+        assertEquals(0, funcion.funcion3(0, 0));
     }
 }

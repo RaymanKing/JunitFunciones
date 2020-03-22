@@ -2,7 +2,7 @@ package pruebas;
 
 import java.util.ArrayList;
 
-public class Funciones {
+public class Funciones { 
 
     public boolean funcion1(int numero) {
 

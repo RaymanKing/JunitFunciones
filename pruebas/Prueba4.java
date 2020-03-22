@@ -37,29 +37,30 @@ public class Prueba4 {
         funcion = null;
     }
 
-    @DisplayName("Test de Caja Negra con cadenas erróneas")
+    @DisplayName("Test de Caja Negra con cadenas errï¿½neas")
     @Test
     void testFuncion4() {
         assertNotEquals("nrqpl scrdll rcsrrs", funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
     }
-    
-    
+
     @DisplayName("Test de analisis de limites de valores")
     @Test
     void testFuncion4_2() {
         assertNull(null, funcion.funcion4("E", "O", "M"));
     }
-    
+
     @DisplayName("Test de caja negra aleatoria incorrecta:")
     @Test
 
-    void pruebaFuncion4_3(){
+    void pruebaFuncion4_3() {
 
-        String [] nombres = {"cpr", "osc", "rTy"};
+        String[] nombres = { "cpr", "osc", "rTy" };
 
-        assertNotEquals(nombres[(int) Math.floor(Math.random()*nombres.length)] ,funcion.funcion4 ("carlos", "espe", "asuncion"));
+        assertNotEquals(nombres[(int) Math.floor(Math.random() * nombres.length)],
+                funcion.funcion4("carlos", "espe", "asuncion"));
 
-        //le pasamos un aleatorio de palabras que no coinciden con el resultado esperado.
+        // le pasamos un aleatorio de palabras que no coinciden con el resultado
+        // esperado.
     }
 
 }

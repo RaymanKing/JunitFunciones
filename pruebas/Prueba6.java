@@ -42,16 +42,16 @@ public class Prueba6 {
     @DisplayName("Test de Caja Negra con cadena")
     @Test
     void testFuncion6() {
-    	ArrayList<Double> arrayDouble = new ArrayList<Double>();
-    	arrayDouble.add(1.0);
-    	arrayDouble.add(2.0);
-    	arrayDouble.add(2.0);
-    	arrayDouble.add(1.0);
-    	ArrayList<Double> array = new ArrayList<Double>();
-    	array.add(6.0);
-    	array.add(64.0);
-    	array.add(12.0);
-    	array.add(1.0);
+        ArrayList<Double> arrayDouble = new ArrayList<Double>();
+        arrayDouble.add(1.0);
+        arrayDouble.add(2.0);
+        arrayDouble.add(2.0);
+        arrayDouble.add(1.0);
+        ArrayList<Double> array = new ArrayList<Double>();
+        array.add(6.0);
+        array.add(64.0);
+        array.add(12.0);
+        array.add(1.0);
         assertEquals(array, funcion.funcion6(arrayDouble));
     }
     // z = 6 y 6
@@ -59,41 +59,42 @@ public class Prueba6 {
     @DisplayName("Test de valores nulos")
     @Test
     void testFuncion6_1() {
-    	ArrayList<Double> array = new ArrayList<Double>();
-    	array.add(0.0);
+        ArrayList<Double> array = new ArrayList<Double>();
+        array.add(0.0);
         assertEquals(array, funcion.funcion6(array));
     }
 
     @DisplayName("Test de analisis de limites")
     @Test
     void testFuncion6_2() {
-    	ArrayList<Double> arrayLimite = new ArrayList<Double>();
-    	arrayLimite.add(0.0);
-    	arrayLimite.add(0.0);
-    	arrayLimite.add(0.0);
-    	arrayLimite.add(0.0);
+        ArrayList<Double> arrayLimite = new ArrayList<Double>();
+        arrayLimite.add(0.0);
+        arrayLimite.add(0.0);
+        arrayLimite.add(0.0);
+        arrayLimite.add(0.0);
         assertEquals(arrayLimite, funcion.funcion6(arrayLimite));
-    } 
-    
-    @DisplayName ("Prueba de caja negra incorrecta")
+    }
+
+    @DisplayName("Prueba de caja negra incorrecta")
 
     @Test
 
-     void pruebaFuncion6(){
+    void pruebaFuncion6() {
 
-        ArrayList <Double> numeros = new ArrayList <Double> ();
+        ArrayList<Double> numeros = new ArrayList<Double>();
         numeros.add(8.0);
         numeros.add(6.0);
-        ArrayList <Double> resultado = new ArrayList <Double> ();
+        ArrayList<Double> resultado = new ArrayList<Double>();
         resultado.add(8.0);
         resultado.add(6.0);
 
-        //le pasamos un resultado en el que los n�meros no se modifican.
-       
-        //comprueba que el resultado es err�neo, dado que le damos unos valores que da un resultado distino al que dar�a en la funci�n.
+        // le pasamos un resultado en el que los n�meros no se modifican.
 
-        assertNotEquals(resultado ,funcion.funcion6 (numeros));
+        // comprueba que el resultado es err�neo, dado que le damos unos valores que da
+        // un resultado distino al que dar�a en la funci�n.
 
-     }
+        assertNotEquals(resultado, funcion.funcion6(numeros));
+
+    }
 
 }

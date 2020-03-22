@@ -44,15 +44,16 @@ public class Prueba5 {
                 "Enrique Rapela Castejon 12/02/1197, Marcos Torres Segura 28/08/1999, Oscar Padilla Valdes 09/04/2000, Esperanza Del Junco Perez 29/06/1997"));
     }
 
-    @DisplayName("Test de caja Negra con Valor erróneo")
+    @DisplayName("Test de caja Negra con Valor errï¿½neo")
     @Test
     void testFuncion5_1() {
-        assertNotEquals(1,funcion.funcion5("Pepe tenia un caballo que se llamaba coliflor"));
+        assertNotEquals(1, funcion.funcion5("Pepe tenia un caballo que se llamaba coliflor"));
     }
-    
+
     @DisplayName("Test de analisis de valores limites")
     @Test
     void testFuncion5_2() {
-        assertEquals(0, funcion.funcion5( "Enrique Rapela Castejon, Marcos Torres Segura, Oscar Padilla Valdes, Esperanza Del Junco Perez"));
+        assertEquals(0, funcion.funcion5(
+                "Enrique Rapela Castejon, Marcos Torres Segura, Oscar Padilla Valdes, Esperanza Del Junco Perez"));
     }
 }
