@@ -39,7 +39,7 @@ public class Prueba1 {
 
     @DisplayName("Test de Caja Negra con un valor")
     @Test
-    void funcion1() {
+    void testFuncion1() {
         assertEquals(true, funcion.funcion1(26));
     }
 
