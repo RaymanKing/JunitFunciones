@@ -39,8 +39,8 @@ public class Prueba4 {
 
     @DisplayName("Test de Caja Negra con cadenas")
     @Test
-    void funcion4() {
-        assertEquals(false, funcion.funcion1("Enrique", "Oscar", "Marcos"));
+    void testFuncion4() {
+        assertArrayEquals(["nrqpl","scdll","rcsrrs"], funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
     }
 
 }
