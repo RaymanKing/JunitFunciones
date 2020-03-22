@@ -49,13 +49,22 @@ public class Prueba2 {
         assertNull(funcion.funcion2(null));
     }
     
-    @DisplayName("prueba realizada por espe")
+    @DisplayName("prueba realizada por espe(*MARIO*)")
     @Test
     //Test de caja negra correcta.
     void testFuncion2_3() {
     	assertEquals(true, funcion.funcion2(450));
     //Estoy comprobando si funciona correctamente, al darle un valor dentro del intervalo.
     
+    }
+
+    @DisplayName("Test de Analisis de valores limites")
+    @Test 
+    void testFuncion2_4() {
+        assertEquals(true, funcion.funcion2(500));
+        assertEquals(false, funcion.funcion2(501));
+        assertEquals(true, funcion.funcion2(400));
+        assertEquals(false, funcion.funcion2(399));
     }
     
 
