@@ -51,13 +51,13 @@ public class Prueba1 {
         assertEquals(false, funcion.funcion1(32));
     }
     
-    @DisplayName("prueba realizada por espe")
+    @DisplayName("Test de Caja Negra con valores aleatorios")
     
     @Test
     
     //Test de caja negra aleatoria.
     void testFuncion1_3() {
     	assertEquals(true, funcion.funcion1((int)(Math.random() * 10)));
-    	//le pasamos un número aleatorio del 0 al 10, el int lo convierte en entero.
+    	//le pasamos un nÃºmero aleatorio del 0 al 10, el int lo convierte en entero.
     }
 }
