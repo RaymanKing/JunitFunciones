@@ -47,7 +47,7 @@ public class Prueba1 {
 
     @DisplayName("Test de Caja Negra con un valor que no sea divisible")
     @Test
-    void funcion1_1() {
+    void testFuncion1_2() {
         assertEquals(false, funcion.funcion1(32));
     }
 }
