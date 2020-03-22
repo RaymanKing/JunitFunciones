@@ -2,6 +2,8 @@ package pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -41,6 +43,12 @@ public class Prueba4 {
     @Test
     void testFuncion4() {
         assertArrayEquals(["nrqpl","scdll","rcsrrs"], funcion.funcion4("EnriqueRapela", "OscarPadilla", "MarcosTorres"));
+    }
+
+    @DisplayName("Test de Caja Negra Valor Nulo")
+    @Test
+    void testFuncion4_1() {
+        assertNull(funcion.funcion4(null));
     }
 
 }
