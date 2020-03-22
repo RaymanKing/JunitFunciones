@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Funciones {
 
     public static double funcion3(double numero, double divisor) {
