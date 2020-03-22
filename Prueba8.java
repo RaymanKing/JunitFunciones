@@ -41,7 +41,7 @@ public class Prueba8 {
     @Test
     void testFuncion8() {
         assertEquals(true,
-                funcion.funcion8({"Marcos","Oscar","Enrique","Esperanza"},{{"Codigo",50,"Comprobaciones",150,"Git",100},{"Codigo",250,"Comprobaciones",250,"Git",100},{"Codigo",60,"Comprobaciones",110,"Git",80},{"Codigo",150,"Comprobaciones",50,"Git",200}}));
+                funcion.funcion8({{50,150,100},{250,250,100},{60,110,80},{150,50,200}},{"Marcos","Oscar","Enrique","Esperanza"}));
     }
 
     // 700
