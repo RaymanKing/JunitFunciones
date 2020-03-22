@@ -55,7 +55,7 @@ public class Prueba8 {
 
 	@Test
 
-	void pruebaFuncion8(){
+	void pruebaFuncion8_2(){
 
 		ArrayList <String> alumnos = new ArrayList <String> ();
 		alumnos.add("pablo");
@@ -69,5 +69,10 @@ public class Prueba8 {
 
 		//es una prueba correcta, por que el resultado esperado coincide con la de la función.
 	}
+
+    @DisplayName ("Test de analisis de limites")
+    @Test 
+    void pruebaFuncion8_3() {
+    }
 
 }
