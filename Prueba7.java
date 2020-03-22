@@ -57,4 +57,19 @@ public class Prueba7 {
         assertArrayEquals("","","","", funcion.funcion7("a", "b", "c","d"));
         assertArrayEquals("78910", funcion.funcion7("12345678910"));
     }
+    
+    @DisplayName("Prueba de caja negra incorrecta: ")
+
+    @Test
+
+      void pruebaFuncion7(){
+
+            String [] cadenas = {"obdulio", "eustaquio", "herminio"};
+            String [] resultadoEsperado = {" ", " ", " "};
+            //le pasamos los datos a los distintos string.
+
+            assertEquals (resultadoEsperado, funcion.funcion7 (cadenas) );
+            //es incorrecta ya que el resultado esperado no coincide con el que indicado(vacío).
+
+      }
 }
