@@ -49,4 +49,10 @@ public class Prueba6 {
     void testFuncion6_1() {
         assertNull(0, 0, 0, 0, funcion.funcion6(null));
     }
+
+    @DisplayName("Test de analisis de limites")
+    @Test
+    void testFuncion6_2() {
+        assertNull(0, 0, 0, 0, funcion.funcion6(null));
+    } 
 }
