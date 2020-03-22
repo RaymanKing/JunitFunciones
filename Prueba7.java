@@ -50,4 +50,11 @@ public class Prueba7 {
     void testFuncion7_1() {
         assertNull(" ", funcion.funcion7(null));
     }
+
+    @DisplayName("Test de analisis de limites");
+    @Test
+    void testFuncion7_2() {
+        assertArrayEquals("","","","", funcion.funcion7("a", "b", "c","d"));
+        assertArrayEquals("78910", funcion.funcion7("12345678910"));
+    }
 }
