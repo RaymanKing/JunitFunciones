@@ -41,8 +41,12 @@ public class Prueba8 {
     @Test
     void testFuncion8() {
         assertEquals(true,
-                funcion.funcion8({{50,150,100},{250,250,100},{60,110,80},{150,50,200}},{"Marcos","Oscar","Enrique","Esperanza"}));
-    }
+                funcion.funcion8({{50,150,100},{250,250,100},{60,110,80},{150,50,200}}, ("Marcos","Oscar","Enrique","Esperanza"));
+    }// 700
 
-    // 700
+    @DisplayName("Test de Caja Negra con array")
+    @Test
+    void testFuncion8_1() {
+        assertNull(false, funcion.funcion8())
+    }
 }
