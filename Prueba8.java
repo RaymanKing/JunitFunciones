@@ -49,4 +49,25 @@ public class Prueba8 {
     void testFuncion8_1() {
         assertNull(false, funcion.funcion8())
     }
+    
+    @DisplayName ("Prueba de caja negra correcta: ")
+
+
+	@Test
+
+	void pruebaFuncion8(){
+
+		ArrayList <String> alumnos = new ArrayList <String> ();
+		alumnos.add("pablo");
+		alumnos.add("anastasia");
+		alumnos.add("pepa");
+		//le pasamos tres alumnos y abajo indicamos los tiempos de cada uno en un array bidimensional.
+
+		int [][] tiempos = {{500,500,500}, {100,100,100}, {500,500,500}};
+
+		assertEquals(true, funcion.funcion8 (tiempos, alumnos));
+
+		//es una prueba correcta, por que el resultado esperado coincide con la de la función.
+	}
+
 }
