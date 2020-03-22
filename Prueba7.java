@@ -43,5 +43,11 @@ public class Prueba7 {
         assertArrayEquals({"ocle", "isti", "onof", "ill"},
                 funcion.funcion7({"Esternocleidomastoideo", "Futbolistico", "Soyunmonofeliz", "Pentakill"}));
     }
+
     // 6 y 10
+    @DisplayName("Test de Caja Negra con valor Nulo")
+    @Test
+    void testFuncion7_1() {
+        assertNull(" ", funcion.funcion7(null));
+    }
 }
