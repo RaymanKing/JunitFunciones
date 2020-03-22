@@ -69,9 +69,9 @@ public class Prueba6 {
         resultado.add(8);
         resultado.add(6);
 
-        //le pasamos un resultado en el que los números no se modifican.
+        //le pasamos un resultado en el que los nï¿½meros no se modifican.
        
-        //comprueba que el resultado es erróneo, dado que le damos unos valores que da un resultado distino al que daría en la función.
+        //comprueba que el resultado es errï¿½neo, dado que le damos unos valores que da un resultado distino al que darï¿½a en la funciï¿½n.
 
         assertEquals(resultado ,funcion.funcion6 (numeros));
 
