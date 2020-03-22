@@ -69,7 +69,7 @@ public class Prueba7 {
             //le pasamos los datos a los distintos string.
 
             assertEquals (resultadoEsperado, funcion.funcion7 (cadenas) );
-            //es incorrecta ya que el resultado esperado no coincide con el que indicado(vacío).
+            //es incorrecta ya que el resultado esperado no coincide con el que indicado(vacï¿½o).
 
       }
 }
