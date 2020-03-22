@@ -49,4 +49,10 @@ public class Prueba5 {
     void testFuncion5_1() {
         assertNull(funcion.funcion5(null));
     }
+
+    @DisplayName("Test de analisis de valores limites")
+    @Test
+    void testFuncion5_2() {
+        assertEquals(0, funcion.funcion5 "Enrique Rapela Castejon, Marcos Torres Segura, Oscar Padilla Valdes, Esperanza Del Junco Perez")
+    }
 }
