@@ -40,8 +40,9 @@ public class Prueba6 {
     @DisplayName("Test de Caja Negra con cadena")
     @Test
     void testFuncion6() {
-        assertArrayEquals(6, 72, 12, 1, funcion.funcion6(1, 2, 2, 1));
-    }// z = 6 y 6
+        assertArrayEquals({6, 72, 12, 1}, funcion.funcion6({1, 2, 2, 1}));
+    }
+    // z = 6 y 6
 
     @DisplayName
     @Test
