@@ -55,4 +55,26 @@ public class Prueba6 {
     void testFuncion6_2() {
         assertNull(0, 0, 0, 0, funcion.funcion6(null));
     } 
+    
+    @DisplayName ("Prueba de caja negra incorrecta")
+
+    @Test
+
+     void pruebaFuncion6(){
+
+        ArrayList <Double> numeros = new ArrayList <Double> ();
+        numeros.add(8);
+        numeros.add(6);
+        ArrayList <Double> resultado = new ArrayList <Double> ();
+        resultado.add(8);
+        resultado.add(6);
+
+        //le pasamos un resultado en el que los números no se modifican.
+       
+        //comprueba que el resultado es erróneo, dado que le damos unos valores que da un resultado distino al que daría en la función.
+
+        assertEquals(resultado ,funcion.funcion6 (numeros));
+
+     }
+
 }
