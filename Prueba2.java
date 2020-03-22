@@ -39,8 +39,14 @@ public class Prueba2 {
 
     @DisplayName("Test de Caja Negra con un valor")
     @Test
-    void funcion2() {
-        assertEquals(true, funcion.funcion1(7));
+    void testFuncion2() {
+        assertEquals(true, funcion.funcion2(7));
+    }
+
+    @DisplayName("Test de Caja Negra Valor Nulo")
+    @Test
+    void testFuncion2_2() {
+        assertNull(funcion.funcion2(null));
     }
 
 }
